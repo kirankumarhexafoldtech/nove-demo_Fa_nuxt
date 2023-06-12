@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div :class="$store.state.isExpanded ? 'w-100vw layout-dash-true expand-div ' : 'layout-dash-false shrink-div '" >
 
 
-    <div class="py-4 container-fluid">
-      <div class="row">
-        <div class="col-lg-12">
-          <KpiComponents class="z-index-2"/>
-        </div>
-      </div>
+    <div class="px-2">
+      <!-- <div class="row"> -->
+        <!-- <div class="col-lg-12"> -->
+          <KpiComponents />
+        <!-- </div> -->
+      <!-- </div> -->
     </div>
 
   </div>
@@ -23,3 +23,14 @@ export default Vue.extend({
   }
 })
 </script>
+
+<style >
+.layout-dash-true{
+  padding-left:13.5%;
+}
+.layout-dash-false{
+  padding-left: 4%;
+}
+
+
+</style>

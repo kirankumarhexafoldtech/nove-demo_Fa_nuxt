@@ -24,7 +24,8 @@ export default {
     "~assets/css/nucleo-icons.css",
     "~assets/css/nucleo-svg.css",
     "~assets/js/nav-pills.js",
-    "~assets/scss/argon-dashboard.scss"
+    "~assets/scss/argon-dashboard.scss",
+    "~assets/css/custom.css"
 
   ],
 

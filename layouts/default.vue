@@ -1,7 +1,10 @@
 <template>
     <div>
         <Sidebar />
-       <Nuxt/>
+        <main class="main-content position-relative max-height-vh-100 h-100">
+
+            <Nuxt/>
+        </main>
     </div>
 </template>
 
