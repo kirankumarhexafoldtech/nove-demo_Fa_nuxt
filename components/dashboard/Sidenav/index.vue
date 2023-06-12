@@ -23,7 +23,7 @@
         </a>
         <div class="ml-auto">
           <div
-            class="sidenav-toggler d-none d-xl-block"
+            class="pr-4"
            
           >
           <div
@@ -90,7 +90,8 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
+
 
 
 </style>

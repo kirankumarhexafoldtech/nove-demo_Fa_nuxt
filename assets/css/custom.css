@@ -1,7 +1,7 @@
 .expand-div{
     transform: translate(-5px, -5px);
-    transition: transform 2s ease-in;
-    transition: width 2s ease, height 2s ease;
+    transition: transform 1s ease-in;
+    transition: width 1s ease, height 1s ease;
   }
   .shrink-div{
     transform: translate(-5px, -5px);
