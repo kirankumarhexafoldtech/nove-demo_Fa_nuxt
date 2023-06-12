@@ -1,7 +1,10 @@
 <template>
     <div>
-        <h4>Navbar</h4>
-        <h4>Sidebar</h4>
-        <Nuxt/>
+        <Sidebar />
+       <Nuxt/>
     </div>
 </template>
+
+<script setup>
+import Sidebar from "~/components/dashboard/Sidenav/index.vue"
+</script>
