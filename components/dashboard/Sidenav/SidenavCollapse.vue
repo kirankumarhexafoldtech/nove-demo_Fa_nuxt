@@ -2,13 +2,7 @@
     <div>
 
         <a
-          :data-bs-toggle="collapse ? 'collapse' : ''"
-          :href="collapse ? `#${collapseRef}` : collapseRef"
-          :aria-controls="collapseRef"
-          :aria-expanded="isExpanded"
           class="nav-link"
-          v-bind="$attrs"
-          @click="isExpanded = !isExpanded"
         >
           <div
             class="icon icon-shape icon-sm text-center d-flex align-items-center justify-content-center"
@@ -17,13 +11,13 @@
           </div>
           <span
             class="nav-link-text"
-            :class="$store.state.isRTL ? ' me-1' : 'ms-1'"
+            :class="$store.state.isExpanded ? ' me-1' : 'ms-1 d-none'"
             >{{ navText }}</span
           >
         </a>
-        <div :class="isExpanded ? 'collapse show' : 'collapse'">
+        <!-- <div :class="isExpanded ? 'collapse show' : 'collapse'">
           <slot name="list"></slot>
-        </div>
+        </div> -->
     </div>
   </template>
   <script>

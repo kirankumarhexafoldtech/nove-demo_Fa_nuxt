@@ -11,15 +11,14 @@
     <div
     
     id="sidenav-main"
-    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 ms-4 "
-    :class="` ${sidebarType} ${
-      isRTL ? 'fixed-end me-3 rotate-caret' : 'fixed-start ms-3'
-    } ${layout === 'landing' ? 'bg-transparent shadow-none' : ''}`"
+    class="sidenav navbar navbar-vertical fixed-left navbar-expand-xs navbar-light bg-white "
+    
+    :class="$store.state.isExpanded ? 'w-full expand-div' : 'w-4 shrink-div'"
     >
 
     <div class="scrollbar-inner" ref="sidebarScrollArea">
       <div class="sidenav-header d-flex align-items-center">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" :class="$store.state.isExpanded ? '': 'd-none'">
           <img src="../../../assets/svg/nova_gas_logo.svg" class="navbar-brand-img" alt="Sidebar logo" />
         </a>
         <div class="ml-auto">
@@ -27,9 +26,10 @@
             class="sidenav-toggler d-none d-xl-block"
            
           >
-          <a
-          href=""
-          class="p-0 nav-link text-body"
+          <div
+        
+          class="p-0 nav-link text-body cursor-pointer"
+          @click="handleIsExpanded()"
         >
           <div class="sidenav-toggler-inner">
             <i
@@ -45,7 +45,7 @@
               
             ></i>
           </div>
-        </a>
+        </div>
         </div>
         </div>
       </div>
@@ -77,24 +77,20 @@ export default{
     name: "Index",
     data() {
         return {
-            layout: this.$store.state.layout,
-            isRTL: this.$store.state.isRTL,
-            sidebarType: this.$store.state.sidebarType,
-            darkMode: this.$store.state.darkMode,
-            show:false
+          
         };
-    },
-    created() {
-        // this.layout = this.$store.state.layout;
-        // this.isRTL = this.$store.state.isRTL;
-        // this.sidebarType = this.$store.state.sidebarType;
-        // this.darkMode = this.$store.state.darkMode;
     },
     components: { SidenavList },
     methods:{
-      onMouseover(){
-        
+      handleIsExpanded(){
+       this.$store.commit('toggleIsExpanded')
       }
     }
+    
 }
 </script>
+
+<style>
+
+
+</style>

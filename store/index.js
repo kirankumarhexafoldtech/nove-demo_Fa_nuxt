@@ -2,6 +2,7 @@ import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
 
 
   export const state= ()=> ({
+    isExpanded:true,
     hideConfigButton: false,
     isPinned: true,
     showConfig: false,
@@ -20,6 +21,7 @@ import bootstrap from "bootstrap/dist/js/bootstrap.min.js";
     bootstrap,
   })
   export const mutations=()=> ({
+    
     toggleConfigurator(state) {
       state.showConfig = !state.showConfig;
     },
