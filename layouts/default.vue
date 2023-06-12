@@ -6,5 +6,5 @@
 </template>
 
 <script setup>
-import Sidebar from "~/components/Sidenav/index.vue"
+import Sidebar from "~/components/dashboard/Sidenav/index.vue"
 </script>

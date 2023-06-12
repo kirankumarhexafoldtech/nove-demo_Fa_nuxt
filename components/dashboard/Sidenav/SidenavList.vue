@@ -9,7 +9,7 @@
           nav-text="Dashboards"
             >
             <template #icon>
-                <img src="../../assets/svg/dashboard_home_icon.svg" alt="">
+                <img src="../../../assets/svg/dashboard_home_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -19,7 +19,7 @@
           nav-text="Distributor"
             >
             <template #icon>
-                <img src="../../assets/svg/distributor_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/distributor_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -29,7 +29,7 @@
           nav-text="Support System"
             >
             <template #icon>
-                <img src="../../assets/svg/support_system_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/support_system_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -39,7 +39,7 @@
           nav-text="Customers"
             >
             <template #icon>
-                <img src="../../assets/svg/customer_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/customer_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -49,7 +49,7 @@
           nav-text="Delivery Agents"
             >
             <template #icon>
-                <img src="../../assets/svg/delivery_agent_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/delivery_agent_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -59,7 +59,7 @@
           nav-text="Products"
             >
             <template #icon>
-                <img src="../../assets/svg/products_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/products_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -69,7 +69,7 @@
           nav-text="Manage Admins"
             >
             <template #icon>
-                <img src="../../assets/svg/manage_admin_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/manage_admin_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -79,7 +79,7 @@
           nav-text="Zones"
             >
             <template #icon>
-                <img src="../../assets/svg/zones_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/zones_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -92,7 +92,7 @@
           nav-text="Transactions"
             >
             <template #icon>
-                <img src="../../assets/svg/transactions_dashboard_icon.png" alt="">
+                <img src="../../../assets/svg/transactions_dashboard_icon.png" alt="">
           </template>
 
             </SidenavCollapse>
@@ -103,7 +103,7 @@
           nav-text="Report"
             >
             <template #icon>
-                <img src="../../assets/svg/report_admin_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/report_admin_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
@@ -116,7 +116,7 @@
           nav-text="Settings"
             >
             <template #icon>
-                <img src="../../assets/svg/settings_dashboard_icon.svg" alt="">
+                <img src="../../../assets/svg/settings_dashboard_icon.svg" alt="">
           </template>
 
             </SidenavCollapse>
