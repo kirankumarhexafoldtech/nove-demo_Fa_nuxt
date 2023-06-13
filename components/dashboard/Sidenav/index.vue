@@ -23,12 +23,12 @@
         </a>
         <div class="ml-auto">
           <div
-            class="pr-4"
+            class="pr-4 sidebar-bread"
            
           >
           <div
-        
-          class="p-0 nav-link text-body cursor-pointer"
+          
+          class="p-0 nav-link text-body cursor-pointer "
           @click="handleIsExpanded()"
         >
           <div class="sidenav-toggler-inner">
@@ -91,7 +91,9 @@ export default{
 </script>
 
 <style scoped>
-
+.sidenav{
+  min-width:70px;
+}
 
 
 </style>

@@ -3,8 +3,22 @@
     transition: transform 1s ease-in;
     transition: width 1s ease, height 1s ease;
   }
+  .shrink-layout-div{
+    transform: translate(-5px, -5px);
+    transition: transform 2s ease-out;
+    transition: width 0.1s ease, height 0.1s ease;
+  }
   .shrink-div{
     transform: translate(-5px, -5px);
     transition: transform 2s ease-out;
     transition: width 0.1s ease, height 0.1s ease;
+  }
+ 
+
+  @media screen and (max-width:760px) {
+   .shrink-layout-div{
+    width:90vw;
+    margin-left: 10vw;
+   }
+  
   }
