@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="bg-light">
         <Sidebar />
         <main class="main-content position-relative max-height-vh-100 h-100">
 

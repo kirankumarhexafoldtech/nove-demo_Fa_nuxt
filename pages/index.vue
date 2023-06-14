@@ -1,6 +1,6 @@
 <template>
   <div :class="$store.state.isExpanded ? 'layout-dash-true expand-div ' : 'layout-dash-false shrink-layout-div '" 
-  class="100vw"
+  class="100vw "
   >
 
 

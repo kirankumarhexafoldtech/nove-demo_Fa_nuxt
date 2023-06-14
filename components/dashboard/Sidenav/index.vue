@@ -2,7 +2,7 @@
   <div>
 
     <div 
-    class="position-absolute w-100 min-height-300 top-0"
+    class="position-absolute w-100 min-height-300 top-0 navbar-light"
     >
     <span class="mask  " style="background-color: #073552;"></span>
       
