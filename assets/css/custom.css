@@ -13,6 +13,37 @@
     transition: transform 2s ease-out;
     transition: width 0.1s ease, height 0.1s ease;
   }
+
+  .flex-gap-20{
+    gap:20px;
+}
+.radio-icon-position{
+    position: relative;
+    bottom: 8px;
+    left:5px;
+}
+.user-card{
+    height: 8.5rem;
+}
+.user-card-27{
+    width:27rem;
+}
+.user-card-35{
+    width:35rem;
+}
+
+.user-profile{
+    border-radius: 7px;
+}
+
+
+@media screen and (max-width:450px) {
+    .user-card{
+        visibility: hidden;
+        display: none;
+    }
+    
+}
  
 
   @media screen and (max-width:760px) {

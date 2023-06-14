@@ -5,6 +5,33 @@
 
 
     <div class="px-2">
+
+
+      <!-- User Kpi  -->
+
+      <div class="w-100 d-flex flex-gap-20 px-4 py-3">
+            <div >
+
+              <UserKpiComponent 
+              name="Yaw Graham"
+              roll="Distributor"
+              status="true"
+              usercard="user-card-27"
+              >
+                <template #profile>
+                  <img src="../assets/img/team-1.jpg" alt="" class="user-profile"  style="width:73px"/>
+                </template>
+              </UserKpiComponent>
+            </div>
+            <div >
+
+              <UserKpiComponent 
+              usercard="user-card-35"
+              userdetails="true"
+              />
+            </div>
+          </div>
+
       <!-- <div class="row"> -->
         <!-- <div class="col-lg-12"> -->
           <KpiComponents />
@@ -18,11 +45,13 @@
 <script lang="ts">
 import Vue from 'vue'
 import KpiComponents from "@/components/cards/KpiComponents.vue"
+import UserKpiComponent from '~/components/cards/UserKpiComponent.vue';
 export default Vue.extend({
   name: 'IndexPage',
   components: {
-    KpiComponents
-  }
+    KpiComponents,
+    UserKpiComponent
+}
 })
 </script>
 
