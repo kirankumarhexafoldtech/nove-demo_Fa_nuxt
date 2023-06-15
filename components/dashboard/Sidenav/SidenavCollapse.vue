@@ -11,7 +11,7 @@
           </div>
           <span
             class="nav-link-text"
-            :class="$store.state.isExpanded ? ' me-1' : 'ms-1 d-none'"
+            :class="store.$state.isExpanded ? ' me-1' : 'ms-1 d-none'"
             >{{ navText }}</span
           >
         </a>
@@ -21,9 +21,17 @@
     </div>
   </template>
   <script>
+import { mainStore } from '~/store';
+
   
   export default {
     name: "SidenavCollapse",
+    setup(){
+      const store = mainStore();
+      return {
+        store
+      }
+    },
     props: {
       collapseRef: {
         type: String,
