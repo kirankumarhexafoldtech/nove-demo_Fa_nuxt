@@ -41,7 +41,7 @@
       <!-- </div> -->
 
 
-            <div class="px-4">
+            <div class="px-4 ">
 
                 <div class="mt-4 row">
             <div class="mt-4 col-md-6 mt-md-0">
@@ -67,8 +67,8 @@
       }" />
             </div>
 
-            <div class="col-md-6">
-              <BarChart title="Overall Sales" height="300" :chart="{
+            <div class="col-md-6 ">
+              <BarChart title="Overall Sales" height="300"  class="bar-chart-padd" :chart="{
                 labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
                 datasets: {
                   label: 'Sales by age',
@@ -220,19 +220,10 @@ import UserOrderTable from "~/components/tables/UserOrderTable.vue"
   </script>
 
 <style>
-.layout-dash-true{
-  padding-left:13.5%;
-}
-.layout-dash-false{
-  padding-left: 4%;
-}
+
 
 @media screen and(max-width:760px) {
-  .shrink-layout-div {
-    min-width:400px;
-    padding-left: 70px;
-    border:1px solid red;
-  }
+ 
 }
 
 

@@ -36,13 +36,30 @@
     border-radius: 7px;
 }
 
+.layout-dash-true{
+    padding-left:15rem;
+  }
+  .layout-dash-false{
+    padding-left: 4rem;
+  }
+
 
 @media screen and (max-width:450px) {
     .user-card{
         visibility: hidden;
         display: none;
     }
+   
+      .layout-dash-true{
+        padding-left: none;
+      }
     
+}
+
+@media screen and (max-width:1250px) {
+    .layout-dash-true{
+        padding-left: 15rem;
+    }
 }
  
 
@@ -51,5 +68,11 @@
     width:90vw;
     margin-left: 10vw;
    }
+   .layout-dash-false{
+    padding-left: 1rem;
+   }
+   .layout-dash-true{
+    padding-left: 1rem;
+}
   
   }
