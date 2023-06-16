@@ -5,7 +5,7 @@ export const mainStore = defineStore('mainstore',
 {
 
     state: ()=>({
-        isExpanded:true,
+        isExpanded:false,
         hideConfigButton: false,
         isPinned: true,
         showConfig: false,
