@@ -197,7 +197,6 @@
   <script>
   import BreadCrumbs from "./Breadcrumbs.vue";
   export default {
-    name: "MainNavbar",
     components: {
       BreadCrumbs
     },

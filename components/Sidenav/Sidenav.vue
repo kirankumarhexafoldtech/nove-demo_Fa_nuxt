@@ -19,7 +19,7 @@
     <div class="scrollbar-inner" ref="sidebarScrollArea">
       <div class="sidenav-header d-flex align-items-center">
         <a class="navbar-brand" href="#" :class="store.$state.isExpanded ? '': 'd-none'">
-          <img src="../../../assets/svg/nova_gas_logo.svg" class="navbar-brand-img" alt="Sidebar logo" />
+          <img src="/nova-logo-1.png" class="navbar-brand-img" alt="Sidebar logo" />
         </a>
         <div class="ml-auto">
           <div
@@ -53,12 +53,7 @@
     </div>
 
 
-    <!-- <div class="sidenav-header">
-      <NuxtLink to="/" class="m-0 navbar-brand">
-        <img src="../../assets/svg/nova_logo.svg"  srcset="" class="navbar-brand-img h-100"
-          alt="main_logo"/>
-      </NuxtLink>
-    </div> -->
+   
     <hr class="mt-0 horizontal dark" />
 
     <SidenavList/>
@@ -73,7 +68,6 @@
 
 <script>
 import { mainStore } from '~/store';
-import SidenavList from './SidenavList.vue';
 
 export default{
     name: "Index",
@@ -88,7 +82,6 @@ export default{
           
         };
     },
-    components: { SidenavList },
     methods:{
       handleIsExpanded(){
        this.store.$state.isExpanded = !this.store.$state.isExpanded;

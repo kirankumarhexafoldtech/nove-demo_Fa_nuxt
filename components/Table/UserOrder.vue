@@ -549,10 +549,9 @@
   
   <script>
   import { DataTable } from "simple-datatables";
-  import ArgonButton from "../../composables/ArgonButton.vue";
+  import ArgonButton from "../../utils/ArgonButton.vue";
   
   export default {
-    name: "UserOrderTable",
     components: {
       ArgonButton,
     },

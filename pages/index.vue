@@ -14,20 +14,20 @@
 
                 
 
-              <UserKpiComponent 
+              <CardUser 
               name="Yaw Graham"
               roll="Distributor"
               status="true"
               usercard="user-card-27"
               >
                 <template #profile>
-                  <img src="../assets/img/team-1.jpg" alt="" class="user-profile"  style="width:73px"/>
+                  <img src="/team-1.jpg" alt="" class="user-profile"  style="width:73px"/>
                 </template>
-              </UserKpiComponent>
+              </CardUser>
             </div>
             <div >
 
-              <UserKpiComponent 
+              <CardUser 
               usercard="user-card-35"
               userdetails="true"
               />
@@ -36,7 +36,7 @@
 
       <!-- <div class="row"> -->
         <!-- <div class="col-lg-12"> -->
-          <KpiComponents />
+          <CardKpi />
         <!-- </div> -->
       <!-- </div> -->
 
@@ -45,7 +45,7 @@
 
                 <div class="mt-4 row">
             <div class="mt-4 col-md-6 mt-md-0">
-              <GradientLineChart id="chart-line" title="Overall Sales" description="<i class='fa fa-arrow-up text-success'></i>
+              <ChartGradientLine id="chart-line" title="Overall Sales" description="<i class='fa fa-arrow-up text-success'></i>
       <span class='font-weight-bold'>4% more</span> in 2021" :chart="{
         labels: [
           'Apr',
@@ -68,7 +68,7 @@
             </div>
 
             <div class="col-md-6 ">
-              <BarChart title="Overall Sales" height="300"  class="bar-chart-padd" :chart="{
+              <ChartBar title="Overall Sales" height="300"  class="bar-chart-padd" :chart="{
                 labels: ['16-20', '21-25', '26-30', '31-36', '36-42', '42+'],
                 datasets: {
                   label: 'Sales by age',
@@ -79,7 +79,7 @@
 
             <div class="mt-4 row ">
               <div class="col-lg-3 col-md-6 col-12 mt-3 ">
-                <LineChart id="chart-widgets-1" title="Sales" title2="3kg | Steel" :value="{
+                <ChartLine id="chart-widgets-1" title="Sales" title2="3kg | Steel" :value="{
                   amount: 'GHs 90',
                   percentage: { value: '+5% since last month', color: 'success' },
                 }" :chart="{
@@ -101,7 +101,7 @@
 }" />
               </div>
               <div class="col-lg-3 col-md-6 col-12 mt-3 col-4">
-                <line-chart id="chart-widgets-2" title="Sales" title2="3kg | Steel" :value="{
+                <ChartLine id="chart-widgets-2" title="Sales" title2="3kg | Steel" :value="{
                   amount: 'GHs 93',
                   percentage: { value: '+6% since last month', color: 'success' },
                 }" :chart="{
@@ -123,7 +123,7 @@
 }" />
               </div>
               <div class="col-lg-3 col-md-6 col-12 mt-3 col-4">
-                <line-chart id="chart-widgets-3" title="Sales" title2="3kg | Steel" :value="{
+                <ChartLine id="chart-widgets-3" title="Sales" title2="3kg | Steel" :value="{
                   amount: 'GHs 93',
                   percentage: { value: '+6% since last month', color: 'success' },
                 }" :chart="{
@@ -145,7 +145,7 @@
 }" />
               </div>
               <div class="col-lg-3 col-md-6 col-12 mt-3 col-4">
-                <line-chart id="chart-widgets-4" title="Sales" title2="3kg | Steel" :value="{
+                <ChartLine id="chart-widgets-4" title="Sales" title2="3kg | Steel" :value="{
                   amount: 'GHs 93',
                   percentage: { value: '+6% since last month', color: 'success' },
                 }" :chart="{
@@ -167,7 +167,7 @@
 }" />
               </div>
               <div class="col-lg-3 col-md-6 col-12 mt-3 col-4">
-                <line-chart id="chart-widgets-5" title="Sales" title2="3kg | Steel" :value="{
+                <ChartLine id="chart-widgets-5" title="Sales" title2="3kg | Steel" :value="{
                   amount: 'GHs 93',
                   percentage: { value: '+6% since last month', color: 'success' },
                 }" :chart="{
@@ -190,7 +190,7 @@
               </div>
             </div>
             <div class="row">
-              <UserOrderTable />
+              <TableUserOrder />
             </div>
           </div>
             </div>
@@ -201,13 +201,7 @@
   </template>
   
   <script>
-  import UserKpiComponent from '~/components/cards/UserKpiComponent.vue';
 import { mainStore } from '~/store';
-import KpiComponents from '~/components/cards/KpiComponents.vue';
-import GradientLineChart from '~/components/charts/GradientLineChart.vue';
-import BarChart from '~/components/charts/BarChart.vue';
-import LineChart from '~/components/charts/LineChart.vue';
-import UserOrderTable from "~/components/tables/UserOrderTable.vue"
   export default{
     setup() {
         const store = mainStore();
@@ -215,7 +209,6 @@ import UserOrderTable from "~/components/tables/UserOrderTable.vue"
             store
         };
     },
-    components: { UserKpiComponent, KpiComponents, GradientLineChart, BarChart, LineChart, UserOrderTable }
 }
   </script>
 
