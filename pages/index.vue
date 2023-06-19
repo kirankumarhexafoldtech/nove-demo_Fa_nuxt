@@ -21,7 +21,7 @@
               usercard="user-card-27"
               >
                 <template #profile>
-                  <img src="../assets/img/team-1.jpg" alt="" class="user-profile"  style="width:73px"/>
+                  <img src="/team-1.jpg" alt="" class="user-profile"  style="width:73px"/>
                 </template>
               </CardUser>
             </div>
