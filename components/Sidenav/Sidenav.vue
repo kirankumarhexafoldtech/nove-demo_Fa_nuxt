@@ -53,12 +53,7 @@
     </div>
 
 
-    <!-- <div class="sidenav-header">
-      <NuxtLink to="/" class="m-0 navbar-brand">
-        <img src="../../assets/svg/nova_logo.svg"  srcset="" class="navbar-brand-img h-100"
-          alt="main_logo"/>
-      </NuxtLink>
-    </div> -->
+   
     <hr class="mt-0 horizontal dark" />
 
     <SidenavList/>
@@ -73,7 +68,6 @@
 
 <script>
 import { mainStore } from '~/store';
-import SidenavList from './SidenavList.vue';
 
 export default{
     name: "Index",
@@ -88,7 +82,6 @@ export default{
           
         };
     },
-    components: { SidenavList },
     methods:{
       handleIsExpanded(){
        this.store.$state.isExpanded = !this.store.$state.isExpanded;

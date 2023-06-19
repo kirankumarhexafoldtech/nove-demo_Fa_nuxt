@@ -129,10 +129,8 @@
 </template>
 
 <script>
-import SidenavCollapse from './SidenavCollapse.vue';
 
 export default{
     name: "SidenavList",
-    components: { SidenavCollapse }
 }
 </script>

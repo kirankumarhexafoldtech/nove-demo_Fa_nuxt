@@ -15,7 +15,7 @@
                     </span>
                 </div>
                 <div class="mt-2 pt-2 text-sm d-flex">
-                    <ActiveIcon :fill="status ? 'green' : 'red'" class="radio-icon-position" /> Active
+                    <IconsActive :fill="status ? 'green' : 'red'" class="radio-icon-position" /> Active
                 </div>
             </div>
 
@@ -62,11 +62,8 @@
 </template>
 
 <script>
-import ActiveIcon from '../icons/ActiveIcon.vue';
 
 export default {
-name: "MiniStatisticsCard",
-components: { ActiveIcon },
 props:{
     name:String,
     roll:String,
